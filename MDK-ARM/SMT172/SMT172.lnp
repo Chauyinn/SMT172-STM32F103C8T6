@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"smt172\startup_stm32f103xb.o"
+"smt172\main.o"
+"smt172\gpio.o"
+"smt172\tim.o"
+"smt172\usart.o"
+"smt172\stm32f1xx_it.o"
+"smt172\stm32f1xx_hal_msp.o"
+"smt172\stm32f1xx_hal_gpio_ex.o"
+"smt172\stm32f1xx_hal_tim.o"
+"smt172\stm32f1xx_hal_tim_ex.o"
+"smt172\stm32f1xx_hal.o"
+"smt172\stm32f1xx_hal_rcc.o"
+"smt172\stm32f1xx_hal_rcc_ex.o"
+"smt172\stm32f1xx_hal_gpio.o"
+"smt172\stm32f1xx_hal_dma.o"
+"smt172\stm32f1xx_hal_cortex.o"
+"smt172\stm32f1xx_hal_pwr.o"
+"smt172\stm32f1xx_hal_flash.o"
+"smt172\stm32f1xx_hal_flash_ex.o"
+"smt172\stm32f1xx_hal_exti.o"
+"smt172\stm32f1xx_hal_uart.o"
+"smt172\system_stm32f1xx.o"
+"smt172\smt172.o"
+--library_type=microlib --strict --scatter "SMT172\SMT172.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SMT172.map" -o SMT172\SMT172.axf

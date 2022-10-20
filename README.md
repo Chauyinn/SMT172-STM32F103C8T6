@@ -1,0 +1,1 @@
+SMT172 temperature detection project based on Hal library, using STM32F103C8T6, TIM2 Channel2 input capture PWM
